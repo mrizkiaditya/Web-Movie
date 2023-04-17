@@ -1,0 +1,85 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #282c34;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #fff;
+  margin: 80px 0;
+}
+
+.Movie-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.Movie-wrapper {
+  background-color: antiquewhite;
+  width: 500px;
+  color: black;
+}
+
+.Movie-search {
+  height: 48px;
+  font-size: 24px;
+  margin-bottom: 32px;
+  padding: 16px;
+  font-weight: bold;
+  width: 475px;
+}
+
+.Movie-title {
+  height: 90px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Movie-detail {
+  margin: 25px 0;
+}
+
+.Movie-date {
+  font-style: italic;
+}
+
+.Movie-rate {
+  color: red;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 550px) {
+  .Movie-search {
+    height: 24px;
+    font-size: 12px;
+    width: 250px;
+  }
+  .Movie-wrapper {
+    width: 340px;
+  }
+  .Movie-image {
+    width: 340px;
+  }
+}
